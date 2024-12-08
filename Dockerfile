@@ -33,4 +33,6 @@ RUN chmod +x /usr/bin/run_with_env.sh
 
 WORKDIR /var/log/genieacs
 
+COPY files/coturn /etc/default/coturn
+
 CMD ["/usr/bin/supervisord","-c","/etc/supervisor/conf.d/supervisord.conf"]
