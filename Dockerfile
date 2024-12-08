@@ -34,5 +34,6 @@ RUN chmod +x /usr/bin/run_with_env.sh
 WORKDIR /var/log/genieacs
 
 COPY files/coturn /etc/default/coturn
+COPY files/turnserver.conf /etc/turnserver.conf
 
 CMD ["/usr/bin/supervisord","-c","/etc/supervisor/conf.d/supervisord.conf"]
