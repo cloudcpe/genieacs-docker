@@ -23,7 +23,7 @@ services:
     genieacs:
         depends_on:
             - 'mongo'
-        image: drumsergio/genieacs:1.2.13
+        image: voost/genieacs:1.2.13
         restart: always
         container_name: "genieacs"
         environment:
@@ -35,6 +35,7 @@ services:
             - GENIEACS_DEBUG_FILE=/var/log/genieacs/genieacs-debug.yaml
             - GENIEACS_EXT_DIR=/opt/genieacs/ext
             - GENIEACS_MONGODB_CONNECTION_URL=mongodb://mongo/genieacs
+            - GENIEACS_UDP_CONNECTION_REQUEST_PORT=3478
         ports:
             - "7547:7547"
             - "7557:7557"
