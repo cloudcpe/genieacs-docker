@@ -35,5 +35,6 @@ WORKDIR /var/log/genieacs
 
 COPY files/coturn /etc/default/coturn
 COPY files/turnserver.conf /etc/turnserver.conf
+COPY files/run.sh /run.sh
 
-CMD ["/usr/bin/supervisord","-c","/etc/supervisor/conf.d/supervisord.conf"]
+CMD ["/run.sh"]
