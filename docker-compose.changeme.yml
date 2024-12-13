@@ -36,6 +36,9 @@ services:
             - GENIEACS_EXT_DIR=/opt/genieacs/ext
             - GENIEACS_MONGODB_CONNECTION_URL=mongodb://mongo/genieacs
             - GENIEACS_UDP_CONNECTION_REQUEST_PORT=3478
+            - GENIEACS_CONNECTION_REQUEST_TIMEOUT=10000
+            - GENIEACS_SESSION_TIMEOUT=60
+            - GENIEACS_DEVICE_ONLINE_THRESHOLD=12000
         ports:
             - "7547:7547"
             - "7557:7557"
