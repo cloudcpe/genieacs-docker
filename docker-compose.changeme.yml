@@ -40,11 +40,11 @@ services:
             - GENIEACS_SESSION_TIMEOUT=60
             - GENIEACS_DEVICE_ONLINE_THRESHOLD=12000
         ports:
-            - "7547:7547"
+            - "7507:7507"
             - "7557:7557"
             - "7567:7567"
-            - "3000:3000"
-            - "3478:3478/udp"
+            - "3003:3003"
+            - "3408:3408/udp"
         volumes:
             - opt_volume:/opt
         networks:
