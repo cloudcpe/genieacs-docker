@@ -39,6 +39,7 @@ services:
             - GENIEACS_CONNECTION_REQUEST_TIMEOUT=10000
             - GENIEACS_SESSION_TIMEOUT=60
             - GENIEACS_DEVICE_ONLINE_THRESHOLD=12000
+            - GENIEACS_UI_PORT=3003
         ports:
             - "7507:7507"
             - "7557:7557"
