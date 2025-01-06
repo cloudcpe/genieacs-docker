@@ -37,11 +37,12 @@ services:
             - GENIEACS_DEBUG_FILE=/var/log/genieacs/genieacs-debug.yaml
             - GENIEACS_EXT_DIR=/opt/genieacs/ext
             - GENIEACS_MONGODB_CONNECTION_URL=mongodb://mongo/genieacs
-            - GENIEACS_UDP_CONNECTION_REQUEST_PORT=3478
+            - GENIEACS_UDP_CONNECTION_REQUEST_PORT=3408
             - GENIEACS_CONNECTION_REQUEST_TIMEOUT=10000
             - GENIEACS_SESSION_TIMEOUT=60
             - GENIEACS_DEVICE_ONLINE_THRESHOLD=12000
             - GENIEACS_UI_PORT=3003
+            - GENIEACS_CWMP_PORT=7507
         ports:
             - "7507:7507"
             - "7557:7557"
