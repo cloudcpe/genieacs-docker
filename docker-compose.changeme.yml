@@ -43,6 +43,7 @@ services:
             - GENIEACS_DEVICE_ONLINE_THRESHOLD=12000
             - GENIEACS_UI_PORT=3003
             - GENIEACS_CWMP_PORT=7507
+            - GENIEACS_FS_URL_PREFIX=http://app.voost.net:8480/acsfile/
         ports:
             - "7507:7507"
             - "7557:7557"
